@@ -259,7 +259,7 @@
 # w = ""
 # for i in userInput:
 #     w = i + w
-    
+
 # if (userInput == w):
 #     print("Yes")
 # else:
@@ -271,9 +271,236 @@
 #     newInput.append(i)
 # print(newInput[::-1] == userInput)
 
-tup = ["C","D", "A", "A", "B", "B", "A"]
+# tup = ["C","D", "A", "A", "B", "B", "A"]
 
-print(tup.count("A"))
+# print(tup.count("A"))
 
-gradesList = sorted(tup)
-print(list(gradesList))
+# gradesList = sorted(tup)
+# print(list(gradesList))c
+
+
+# integer = 5
+# floating = 0.1
+# string = "string"
+# complex = 2j
+# boolean = True
+# list1 = [1, 2, 3]
+# tuple1 = (1,), (1, 2, 3)
+# dictionary = {"name": "Mubarak", "age": 25}
+# noneType = None
+# set1 = {1, 2, 3}
+# frozenset1 = frozenset[{1, 2, 5}]
+
+
+# for i in range(1,integer + 1):
+#     print(i)
+
+# check number is prime or not
+
+
+# whichOne = ["prime", "armstrong", "palindrome"]
+
+# primes, armstrong, palindrome = [], [], []
+
+
+# def CheckPAP():
+#     checkInput = input("Enter To Check If It is Prime or not : ")
+
+#     userInput = input(
+#         "Enter Number To Check If It Is Prime, Armstrong, Palindrom Or not: "
+#     )
+#     if checkInput == whichOne[0]:
+#         for i in range(2, (int(userInput) // 2) + 1):
+
+#             if int(userInput) % i == 0:
+#                 print("Not Prime")
+#                 break
+#             else:
+#                 primes.append(i)
+#             return primes
+
+#     elif checkInput == whichOne[1]:
+#         if userInput == sum([int(userInput) ** 3 for i in userInput]):
+#             armstrong.append(i)
+#         else:
+#             print('Not Armstrong')
+#         return armstrong
+#     elif checkInput == whichOne[2]:
+#         if userInput == userInput[::-1]:
+#             palindrome.append(i)
+#         else:
+#             print("Not Palindrome")
+#         return palindrome
+#     else:
+#         print("Invalid Input")
+
+
+# print(CheckPAP())
+
+# dictionary
+
+myDetails = {
+    "name" : "Mubarak",
+    "age" : 25,
+    "surname" : "Dalvi",
+    "address": "Mumbai",
+    "isMale": True,
+    "bg": "O+"
+}
+
+# for i in myDetails:
+#     print(i, myDetails[i])
+
+# myDetails.update({"name": "Mubarak Dalvi"})
+
+# lst = list(myDetails.values())
+
+# var1 = lst[0] = "Mubarak Dalvi"
+# print(var1)
+
+# set1 = {1,2,45,4,6,4,8}
+
+# for i in set1:
+#     print(i)
+
+# set1.add(100)
+
+# print(set1)
+
+# tolst = list(set1)
+
+# for i in tolst:
+#     print(i)
+
+
+#nested list tuple dict 
+
+# nlst = [1,2,4,5,4,[1,2,5,4,5,5,6,],1424,6,45,]
+# print(nlst)
+# #to print specific from nested list
+# print(nlst[5][-1])
+
+# ntup = (1,2,4,5,4,(1,2,5,4,5,5,6,),1424,6,45)
+# print(ntup)
+
+# ndict = {"name" : "Mubarak", "age" : 25, "surname" : "Dalvi", "address": {
+#     "city": "Mumbai", "state": "Maharashtra", "country": "India"
+# }, "isMale": True, "bg": "O+"}
+
+# print(ndict)
+
+# nset = {1,2,4,5,4,(1,2,5,4,5,5,6,),1424,6,45}
+# print(nset)
+
+
+# print(ndict.get("address").get("city"))
+
+# # match case
+# n = 3
+# match n:
+#     case 1: 
+#         print("one")
+#     case 2:
+#         print("two")
+#     case 3:
+#         print("three")
+#     case _:
+#         print("default")
+
+
+# print(ndict.fromkeys("Mubarak"))
+
+#pract 
+
+# pdict = {}
+
+# pdict["cat"] = "meow"
+# print(pdict)
+
+# pdict["table"] = "a peice of furniture", "a table in a database"
+
+# print(pdict)
+
+
+# print(len({"python","java","c++","python","javascript","java","python","java","c++","c"}))
+
+# dict1 = {}
+
+# userInput = list(input("Enter Subject name followed by its matks obtain: ").split())
+
+# for i in range(0,len(userInput),2):
+#     dict1[userInput[i]] = userInput[i+1]
+
+# print(dict1)
+
+
+# print({("int",9),("float",9.0)})
+
+# num1 = 100
+# num2= 1
+
+# while num2 < num1:
+#     print(num2)
+#     num2 += 1
+
+# print(num2)
+
+# print('-----------------------')
+
+# while num1 > 1:
+#     print(num1)
+#     num1 -= 1
+
+# print(num1)
+
+# mulnum = int(input('Enter Number: '))
+
+# while mulnum <= mulnum * 10:
+#     print(mulnum)
+#     mulnum *= 2
+
+
+
+#recusive functions 
+#factorial
+# lst = []
+
+# def fac(num):
+#     if num == 1:
+#         return 1
+#     else:
+#         lst.append(num)
+#         return num * fac(num - 1)
+    
+# print(fac(5))
+# print(lst)
+
+# n = int(input("Enter Number: "))
+
+# for i in n:
+#     summ += i
+# print(summ) 
+
+# count = 0
+# while count < len(n):
+#     summ += n[count]
+#     count += 1
+
+# print(summ)
+
+# factorial
+# fac = 1
+# while n > 1:
+#     fac *= n
+#     n -= 1
+# print(fac)
+
+# fac = 1
+# for i in range(1,n+1):
+#     fac *= i
+# print(fac)
+
+def calc(a,b):
+    return sum(a,b)
+
+print(calc(1,2))
