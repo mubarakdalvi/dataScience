@@ -500,7 +500,20 @@ myDetails = {
 #     fac *= i
 # print(fac)
 
-def calc(a,b):
-    return sum(a,b)
+# def calc(*args):
+#     return sum(args)
 
-print(calc(1,2))
+# print(calc(1,2))
+
+
+def avg (*args):
+    return sum(args) / len(args)
+
+print(avg(1,2,3,4,5,6,7,8,9,10))
+
+
+def convertor(usd):
+    inr = 83.5
+    return f"${usd * inr}"
+
+print(convertor(100))
